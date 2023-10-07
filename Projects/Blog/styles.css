@@ -1,0 +1,38 @@
+/* Reset some default styles for consistency */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for header */
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Styling for feature sections */
+.features {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F8F9FA;
+    padding: 20px;
+}
+
+.feature {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styling for footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    opacity: 0.5;
+    padding: 10px 0;
+}
