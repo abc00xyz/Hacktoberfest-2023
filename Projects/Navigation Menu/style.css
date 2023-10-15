@@ -1,0 +1,44 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    background-color: #000; /* Set background color to black for a night sky */
+}
+
+.starry-night {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.stars {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+    background-color: #fff; /* Set star color to white */
+    border-radius: 50%;
+    animation: twinkle 2s infinite; /* Apply the twinkle animation */
+    margin: 5px;
+}
+
+/* Keyframes for the twinkle animation */
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.star:hover {
+    animation: none; /* Remove animation on hover */
+    transform: scale(1.5); /* Enlarge the star on hover */
+    cursor: pointer; /* Change cursor on hover */
+}
